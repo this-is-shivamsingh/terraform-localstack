@@ -1,4 +1,4 @@
-1. auth token: export LOCALSTACK_AUTH_TOKEN="ls-WAGeNaPO-WITI-FiGA-2373-1251paFIa49a"
+1. auth token: export LOCALSTACK_AUTH_TOKEN="LOCAL_STACK_TOKEN"
 2. aws acces keys
 export AWS_ACCESS_KEY_ID="test"
 export AWS_SECRET_ACCESS_KEY="test"
