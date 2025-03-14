@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: flask-deployment
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: flask
+  template:
+    metadata:
+      labels:
+        app: flask
+    spec:
+      nodeName: k3d-localstack-eks-cluster-agent-localstack-node-group-0 # Direct node name
+      containers:
+      - name: nginx
+        image: 000000000000.dkr.ecr.us-east-1.localhost.localstack.cloud:4566/nginx-repo:flask-app
+        ports:
+        - containerPort: 80
