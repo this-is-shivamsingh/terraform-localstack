@@ -16,3 +16,8 @@ terraform output eks_cluster_endpoint
 
 # For pushing docker image to ecr repo
 docker tag flask-app:latest 000000000000.dkr.ecr.us-east-1.localhost.localstack.cloud:4566/nginx-repo:flask-app
+
+
+# Post deploying
+Deploying -> service -> ingress
+curl http://localhost:8081/get
